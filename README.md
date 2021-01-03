@@ -22,6 +22,7 @@ GET http://localhost:8000/welcome
 ```
 
 Hit the refresh route, and then inspect the clients cookies to see the new value of the `token` cookie, ensuring that a new token is not issued until enough time has elapsed (a new token will only be issued if the old token is within 30 seconds of expiry. Otherwise, return a bad request status)
+
 ```
 POST http://localhost:8000/refresh
 ```
